@@ -15,8 +15,9 @@
 - **Relevant Coursework:** Quantitative models for data science, ML & AI, Databases and Big Data, Social Network Analysis, Data Analysis for Business, FinTech
 - **Thesis:** “Evolving Language Models: Technical Aspects and Impact on Higher Education”
 
-### High School Diploma | Scuola Internazionale Europea Statale Altiero Spinelli in Torino, Italy
-<sub>**Scientific Lyceum with Italian and French Baccalaureate**</sub>
+### Scientific High School Diploma | S.I.E.S. Spinelli in Torino, Italy
+<sub>**Sep. 2015 - July 2020**</sub>
+- Scientific Lyceum with ESABAC (Dual Italian and French Baccalaureate)
 
 ## 💼 Work Experience
 ### **Data Science Intern @ Rolls-Royce Motor Cars**
