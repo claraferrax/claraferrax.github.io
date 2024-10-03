@@ -34,7 +34,7 @@
 ## 🛠️ Projects
 
 ### Customer Churn Prediction
-[Project Folder](./customer-churn-prediction) 
+[Project Folder](./customer-churn-project) 
 - Implemented multiple ML algorithms using Jupyter Notebook and Python libraries (NumPy, Pandas, matplotlib, sklearn, seaborn).
 - Achieved 99.22% accuracy on testing data and applied Clustering on new data post-PCA using R.
 
