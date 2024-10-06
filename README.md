@@ -34,7 +34,7 @@
 ## 🛠️ Projects
 
 ### Customer Churn Prediction
-[Project Folder](./customer-churn-project) 
+[Project Folder](https://github.com/claraferrax/claraferrax.github.io/blob/main/customer-churn-project/churn.ipynb) 
 - Implemented multiple ML algorithms using Jupyter Notebook and Python libraries (NumPy, Pandas, matplotlib, sklearn, seaborn).
 - Achieved 99.22% accuracy on testing data and applied Clustering on new data post-PCA using R.
 
