@@ -1,4 +1,4 @@
-# Clara Maria Ferracini
+# Data Scientist in Training
 
 ## 📊 Technical Skills
 - Python, MATLAB, R, SQL, Excel, BPMN
@@ -15,9 +15,9 @@
 - **Relevant Coursework:** Quantitative models for data science, ML & AI, Databases and Big Data, Social Network Analysis, Data Analysis for Business, FinTech
 - **Thesis:** “Evolving Language Models: Technical Aspects and Impact on Higher Education”
 
-### Scientific High School Diploma | S.I.E.S. Spinelli in Torino, Italy
+### High School Diploma | S.I.E.S. Spinelli in Torino, Italy
 <sub>**Sep. 2015 - July 2020**</sub>
-- Scientific Lyceum with ESABAC (Dual Italian and French Baccalaureate)
+- Scientific Lyceum with Italian and French Baccalaureate
 
 ## 💼 Work Experience
 ### **Data Science Intern @ Rolls-Royce Motor Cars**
@@ -29,7 +29,7 @@
 
 ### **Contractor @ Zanichelli**
 <sub>_Rome, Italy | Winter 2021_</sub>
-- Editorial work on a high school computer science book “Imparare a Programmare” (ed.2022) focusing on algorithms and programming basics.
+- Editorial work on a high school computer science book “Imparare a Programmare” (ed.2022): mainly addressing explanation of algorithms and basics of programming languages.
 
 ## 🛠️ Projects
 
@@ -48,29 +48,29 @@
 ### Virus Propagation
 - Created a virus propagation model in a dolphin society and analyzed it using Python (_April 2022_).
 
-### Wine Prediction
+### Wine Quality Prediction
 - Developed a Regression model and conducted further Clustering analysis using R (_May 2022_).
 
 ### Travel Agency Site
 - Designed and implemented a Web App using HTML, CSS, and Django to showcase destinations and book trips (_May 2021_).
 
 ## 📜 Certifications and Training
-- **Stanford Online** - Machine Learning (_Nov. 2022_)
-- **KNIME** - Data Science with KNIME software (_Nov. 2022_)
-- **Google** - Advanced Google Analytics (_Oct. 2022_)
+- **Stanford Online** - Machine Learning: projects on ML algos, model regularisation and feature engineering (_Nov. 2022_)
+- **KNIME** - Data Science with KNIME software: proficiency in the platform for data driven innovation (_Nov. 2022_)
+- **Google** - Advanced Google Analytics: data analysis, tracking, optimization, and informed decision-making (_Oct. 2022_)
 - **Cisco** - Cybersecurity Essentials (_Dec. 2021_)
-- **Kaggle** - Data Visualization with Python Libraries
+- **Kaggle** - Data Visualization with Python's Libraries Matplotlib, Seaborn, and Plotly
 - **Coursera** - "Successful Negotiation: Essential Strategies and Skills" (_Aug. 2021_)
 - **Académie de Dijon** - Diplôme du Baccalauréat Général (_July 2020_)
 - **Oxford Scholastica Academy** - Computer Science Summer Course (_Aug. 2019_)
-- **ISSOS Yale University** - Business and Entrepreneurship course with honors (_July 2018_)
+- **ISSOS Yale University** - Business and Entrepreneurship course comppleted, Outdoor Leadership course competed with honors (_July 2018_)
 
 ## 🗣️ Additional Information
 
 ### Languages
 - **Italian** (Mother Tongue)
 - **English** (Fluent)
-- **French** (Fluent)
+- **French** (Intermediate Proficiency)
 - **Spanish** (Basic Proficiency)
 
 ### Activities
