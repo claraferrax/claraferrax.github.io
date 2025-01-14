@@ -39,7 +39,7 @@
 - Achieved 99.22% accuracy on testing data and applied Clustering on new data post-PCA using R.
 
 ### Wine Quality Prediction
-[Project Folder](https://github.com/claraferrax/claraferrax.github.io/blob/main/wine-quality-prediction/DAB15.05.pdf)
+[Project Folder](https://github.com/claraferrax/claraferrax.github.io/blob/main/wine-quality-prediction/DAB13.05.pdf)
 - Developed predictive models using regression techniques (multiple regression,
 LASSO, ridge) and non-linear methods (natural splines, decision trees, random forests) to assess wine quality based on its biological components. Conducted clustering analysis with PCA and K-means to identify key
 predictors and data patterns. Used R libraries (tidyvers, ISLR, glmnet, ggplot2, dplyr, factoextra, pRoc, cluster) (_May 2022_).
