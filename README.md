@@ -41,8 +41,11 @@
 ### Wine Quality Prediction
 [Project Folder](https://github.com/claraferrax/claraferrax.github.io/blob/main/wine-quality-prediction/DAB13.05.pdf)
 - Developed predictive models using regression techniques (multiple regression,
-LASSO, ridge) and non-linear methods (natural splines, decision trees, random forests) to assess wine quality based on its biological components. Conducted clustering analysis with PCA and K-means to identify key
-predictors and data patterns. Used R libraries (tidyvers, ISLR, glmnet, ggplot2, dplyr, factoextra, pRoc, cluster) (_May 2022_).
+LASSO, ridge) and non-linear methods (natural splines, decision trees, random forests) to assess wine quality based on its biological components. Conducted clustering analysis with PCA and K-means to identify key predictors and data patterns. Used R libraries (tidyvers, ISLR, glmnet, ggplot2, dplyr, factoextra, pRoc, cluster) (_May 2022_).
+
+### Fraudolent Links Detection
+[Project Folder](https://github.com/claraferrax/claraferrax.github.io/blob/main/fraudolentLinkd-detection/Report.pdf)
+- Developed a counter-fraud strategy by using Machine Learning models—Naive Bayes, Logistic Regression, and Decision Tree—to detect and classify fraudulent URLs, including phishing and defacement attacks. Through exploratory data analysis (EDA) and model training, the project aims to identify key characteristics of fraudulent links and improve future fraud detection and prevention systems.
 
 ### Job Seeking
 - Wrote SQL queries to identify the best-suited jobs in a dataset of 2,500 offers worldwide.
