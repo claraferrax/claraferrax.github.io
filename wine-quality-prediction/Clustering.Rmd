@@ -1,0 +1,164 @@
+---
+title: "Interstellar Clustering"
+author: "Interstellar"
+date: "13/9/2022"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+#Task 2
+
+## Introduction:
+At this point of our analysis we already have developed a regression predictive algorithm to assess the quality of an "in working wine". 
+In a business perspective, to give a firm a full understanding of which chemical characteristics make a "good wine", we performed a clustering. We divided our response vector "quality" in a binary factor ("bad wine" and "good wine") and compared it with the clustering results. Finally we evaluated the most meaningful predictors for the clustering.
+
+### Clustering
+
+```{r setup, include=FALSE}
+#Libraries-------------------
+library(ISLR)
+library(tidyverse)
+library(magrittr)
+library(glmnet) 
+library(grpreg) 
+library(mvtnorm)
+library(ggplot2)
+require(class)
+require(pROC)
+require(GGally)
+require(dplyr)
+require(factoextra)
+require(ggplot2)
+library(plotly)
+library(MASS)
+require(gam)
+library(mvtnorm)
+library(cluster)
+library(ggpubr)
+library(mclust)
+require(gridExtra)
+library(splines)
+require(gam)
+require(grid)
+require(splines)
+require(mgcv)
+require(rmarkdown)
+library(magrittr)
+library(dplyr) 
+require(dplyr)
+#data load
+data <- read_delim("WineQuality.csv", delim=",")
+```
+We first clean the dataset from any duplicate or NA value and then we bin the quality in bad wines (quality score<6) and good wines (quality score>=6).
+```{r, include=FALSE}
+#omitting the NAs
+data <- na.omit(data)
+#deleting the duplicates
+any(duplicated(data)) #we see that there are some duplicates
+data <- distinct(data)  #so we get rid of it
+data$quality = as.factor(ifelse(data$quality<6, "bad wine", "good wine"))
+qual <- data$quality
+data_noqual = data %>% dplyr::select(-quality)
+```
+Then we perform PCA on the clean dataset (without the response) in order to shape the best parameters to perform the clustering.
+### PCA 
+
+```{r,results='hide',fig.keep='all'}
+#scale the variables
+apply(data_noqual, 2, mean)
+apply(data_noqual, 2, var)
+#There is no need to scale the data since we put "cor=T"
+pca = princomp(data_noqual, cor=T) #Apply the principal components analysis using correlation matrix
+summary(pca)
+fviz_eig(pca)
+pc.comp <- pca$scores
+pc.comp
+pc.comp1 <- -1*pc.comp[,1] #We extract principal component 1 scores 
+pc.comp2 <- -1*pc.comp[,2]
+pc.comp3 <- -1*pc.comp[,3]
+pc.comp4 <- -1*pc.comp[,4]
+pc.comp5 <- -1*pc.comp[,5]
+data_pca <- data_noqual
+data_pca$pc.comp1 <- pc.comp1
+data_pca$pc.comp2 <- pc.comp2
+data_pca$pc.comp3 <- pc.comp3
+data_pca$pc.comp4 <- pc.comp4
+data_pca$pc.comp5 <- pc.comp5
+data_pca <- data_pca %>% dplyr::select(pc.comp1, pc.comp2,pc.comp3,pc.comp4,pc.comp5) 
+data_pca
+```
+Then we look at which variables contribute more to the components
+```{r,results='hide',fig.keep='all'}
+fviz_pca_var(pca,
+             col.var = "contrib",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+)
+# Eigenvalues
+eig.val <- get_eigenvalue(pca)
+eig.val
+```
+```{r}
+# Results for Variables
+res.var <- get_pca_var(pca)
+res.var$coord  # Coordinates
+```
+```{r,results='hide',fig.keep='all'}
+res.var$contrib # Contributions to the PCs
+res.var$cos2  # Quality of representation 
+```
+```{r,results='hide'}
+# Results for individuals
+res.ind <- get_pca_ind(pca)
+res.ind$coord # Coordinates
+res.ind$contrib # Contributions to the PCs
+res.ind$cos2  # Quality of representation
+```
+### k-Means Clustering
+```{r,echo=FALSE,results='hide'}
+data_pca <- data.frame(data_pca)
+fviz_nbclust(data_pca, FUNcluster = kmeans, method = "wss")
+fviz_nbclust(data_pca, FUNcluster = kmeans, method = "silhouette")
+```
+Silhouette and elbow-method on k-Means find that the optimal number of clusters is 2.
+```{r,fig.keep='all'}
+km2 <- kmeans(data_pca, centers = 2)
+km2
+```
+The main difference between the two clusters is that in cluster 1 (bad wine) the influence of the first component is negative while in cluster 2 (good wine) the influence of the first component is the only one that is positive.
+
+#### Clusters plot
+```{r}
+fviz_cluster(object=km2,data_pca) + theme_bw()
+```
+
+Now we compare if the clustering on the considered numerical variables result of the pca agrees with one of the original categorical variable: Quality ( good wine or bad wine)
+
+```{r}
+datWC <- data_pca %>% mutate(clust=km2$cluster)
+```
+We can show a contingency table
+```{r,fig.keep='all'}
+datWC$quality <-  qual
+(contTable <- datWC %>% dplyr::select(quality, clust) %>% table())
+chisq.test(contTable) #p-value is low
+prop.table(contTable, margin=1) 
+```
+"good wine" and "bad wine" have not so different distribution across the first clusters,
+while in the second cluster around 3/4 of data points have good wine prediction
+```{r}
+mclust::adjustedRandIndex(datWC$quality, datWC$clust)
+```
+
+Since ARI is low (0.085) in the cluster labels the wines tend to belong to the same cluster 
+even if they have not similar characteristics
+
+### Conclusion: 
+
+Unfortunately the result of the ARI index shows that the 2 clusters don't tend to show evident propensity for having good quality or bad quality in wines.
+However, analizing the pca components and the variables from which they are composed of, we can state that the first component is the one with more weight.This component is for the most influenced by residual.sugar, density, total.sulfur.dioxide and alcohol. So we can deduce that negative values for the first component tend to worsen the quality of the wine, conversely positive values lead to good wines.
+
+This clustering result isn't shocking as in Task 1 we underlined how this problem is interpretable through a linear regression of 10 variables.
+Anyway, the implementation of the Clustering turned out to be very useful as it confirms the importance of the predictors we selected in Task 1.
+
+
