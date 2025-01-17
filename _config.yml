@@ -1,5 +1,5 @@
 title: Clara Maria Ferracini
-logo: ./assets/img/headshot.JPG
+logo: /assets/img/headshot.JPG
 #description:
 show_downloads: true
 theme: jekyll-theme-minimal
