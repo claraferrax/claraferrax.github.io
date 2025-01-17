@@ -38,26 +38,26 @@
 - Implemented multiple ML algorithms using Jupyter Notebook and Python libraries (NumPy, Pandas, matplotlib, sklearn, seaborn).
 - Achieved 99.22% accuracy on testing data and applied Clustering on new data post-PCA using R.
 
-### Wine Quality Prediction
+### 🍷 Wine Quality Prediction
 [Project Folder](https://github.com/claraferrax/claraferrax.github.io/blob/main/wine-quality-prediction/DAB13.05.pdf)
 - Developed predictive models using regression techniques (multiple regression,
 LASSO, ridge) and non-linear methods (natural splines, decision trees, random forests) to assess wine quality based on its biological components. Conducted clustering analysis with PCA and K-means to identify key predictors and data patterns. Used R libraries (tidyvers, ISLR, glmnet, ggplot2, dplyr, factoextra, pRoc, cluster) (_May 2022_).
 
-### Fraudolent Links Detection
+### 🥷🏻 Fraudolent Links Detection
 [Project Folder](https://github.com/claraferrax/claraferrax.github.io/blob/main/fraudolentLinks-detection/Report.pdf)
 - Developed a counter-fraud strategy by using Machine Learning models—Naive Bayes, Logistic Regression, and Decision Tree—to detect and classify fraudulent URLs, including phishing and defacement attacks. Through exploratory data analysis (EDA) and model training, the project aims to identify key characteristics of fraudulent links and improve future fraud detection and prevention systems.
 
-### Job Seeking
+### 👩🏻‍💻 Job Seeking
 - Wrote SQL queries to identify the best-suited jobs in a dataset of 2,500 offers worldwide.
 
-### Social Media Marketing Campaign
+### 📈 Social Media Marketing Campaign
 - Used NLP and Mining techniques on Twitter data and applied Explanatory Analytics using Knime.
 - Predicted customer engagement with campaigns, including topic modeling with LDA.
 
-### Virus Propagation
+### 🦠 Virus Propagation
 - Created a virus propagation model in a dolphin society and analyzed it using Python (_April 2022_).
 
-### Travel Agency Site
+### 🗺️ Travel Agency Site
 - Designed and implemented a Web App using HTML, CSS, and Django to showcase destinations and book trips (_May 2021_).
 
 ## 📜 Certifications and Training
