@@ -1,5 +1,5 @@
 # Data Scientist in Training
-
+   
 ## 📊 Technical Skills
 - Python (Pandas, NumPy, TensorFlow, scikit-learn, Matplotlib, Seaborn, PyTorch), MATLAB, R (tidyvers, ISLR, glmnet, ggplot2, dplyr, factoextra, pRoc, cluster), SQL, Excel, BPMN
 - Good knowledge of HTML, CSS, Django, Celonis, Jira, Confluence, Salesforce, Git, Swift
