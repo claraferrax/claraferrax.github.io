@@ -33,6 +33,13 @@
 
 ## 🛠️ Projects
 
+### Criteo Hackathon - Brand Unification with NLP and Web Scrapping APIs
+[Project Folder](https://github.com/claraferrax/Criteo-Hackathon)
+
+[![My Skills](https://skillicons.dev/icons?i=python,vscode)](https://skillicons.dev)
+- In this project, we unify brand names using a custom weighted Jaccard similarity metric. We begin by tokenizing the brand names and assign higher weights to tokens that represent brand names and lower weights to common words (identified by NLTK's English vocabulary). This approach allows us to effectively cluster variants like Versace, Versace Kids, and Versace Jeans. To merge brands with distinct naming (e.g., EA vs. Electronic Arts), we enrich our dataset by scraping URLs from targeted Google searches (using queries like "brand name" and "brand name + logo") and fetching descriptive texts via the Gemini API. Finally, we apply our weighted similarity metric to product descriptions—tuning the influence of common words—to achieve highly accurate brand unification.
+
+
 ### Fraudolent Links Detection 🥷🏻 
 [Project Folder](https://github.com/claraferrax/fraudulentLinks-detection/blob/main/README.pdf)
 
