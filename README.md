@@ -1,7 +1,7 @@
 # Data Scientist in Training
    
 ## 📊 Technical Skills
-- **Python:** Pandas, NumPy, scikit-learn, TensorFlow, PyTorch, Matplotlib, Seaborn, **Qiskit**
+- **Python:** Pandas, NumPy, scikit-learn, TensorFlow, PyTorch, Matplotlib, Seaborn, Qiskit
 - **Data / BI:** SQL, Spark, Excel, Tableau, BigQuery
 - **Cloud:** AWS (S3, Redshift, SageMaker, QuickSight)
 - **Tools:** Git, Salesforce, Swift
@@ -30,7 +30,7 @@
 ### **Business Intelligence Engineering Intern @ Amazon**
 <sub>_Paris, France | July – Present_</sub>
 - Optimized and productionised ETL pipelines on AWS using Spark SQL
-- Ran statistical analysis on A/B tests for a **€30M savings** lab in network planning
+- Ran statistical analysis on A/B tests for a _€30M savings_ lab in network planning
 - Modelled impact of exteriments to predict savings
 - Automated analysis in Python and built dashboards for Search Algo insights
 - Supported testing and fine-tuning MCP AI systems using prompt engineering
@@ -44,7 +44,7 @@
 
 ### **Contractor @ Zanichelli**
 <sub>_Rome, Italy | Winter 2021_</sub>
-- Editorial work on a high school computer science book “Imparare a Programmare” (ed.2022): mainly addressing explanation of algorithms and basics of programming languages.
+- Editorial work on a high school computer science book “Imparare a Programmare” (ed.2022): mainly addressing explanation of algorithms, data structures and basics of programming languages.
 
 ## 🛠️ Projects
 
@@ -52,24 +52,25 @@
 [Project Folder](https://github.com/claraferrax/Criteo-Hackathon)
 
 [![My Skills](https://skillicons.dev/icons?i=python,vscode)](https://skillicons.dev)
-- In this project, we unify brand names using a custom weighted Jaccard similarity metric. We begin by tokenizing the brand names and assign higher weights to tokens that represent brand names and lower weights to common words (identified by NLTK's English vocabulary). This approach allows us to effectively cluster variants like Versace, Versace Kids, and Versace Jeans. To merge brands with distinct naming (e.g., EA vs. Electronic Arts), we enrich our dataset by scraping URLs from targeted Google searches (using queries like "brand name" and "brand name + logo") and fetching descriptive texts via the Gemini API. Finally, we apply our weighted similarity metric to product descriptions—tuning the influence of common words—to achieve highly accurate brand unification.
+- In this project, we unify brand names using a custom weighted Jaccard similarity metric. We begin by tokenizing the brand names and assign higher weights to tokens that represent brand names and lower weights to common words (identified by NLTK's English vocabulary). This approach allows us to effectively cluster variants like Versace, Versace Kids, and Versace Jeans. To merge brands with distinct naming (e.g., EA vs. Electronic Arts), we enrich our dataset by scraping URLs from targeted Google searches (using queries like "brand name" and "brand name + logo") and fetching descriptive texts via the Gemini API. Finally, we apply our weighted similarity metric to product descriptions, tuning the influence of common words, to achieve highly accurate brand unification.
 
 ### Projected Quantum Features for Supply Chain Anomaly Detection (Master Thesis Research Component) ⚛️📦
 [Project Folder](https://github.com/claraferrax/PQF/tree/main)
 
-[![My Skills](https://skillicons.dev/icons?i=python,spyder)](https://skillicons.dev) 
+[![My Skills](https://skillicons.dev/icons?i=python,vscode)](https://skillicons.dev) 
 
-**Summary:** Researched whether **Projected Quantum Features (PQF)** can improve anomaly detection compared to strong classical baselines in a realistic monitoring setting.
+**Summary:** Researched whether Projected Quantum Features (PQF) can improve anomaly detection compared to strong classical baselines in a realistic monitoring setting.
+
 **Context:** In supply-chain monitoring, keeping false alarms low is key to maintaining trust and usability.
 
-- Built a reproducible anomaly detection pipeline aligned with real deployment constraints: **chronological train/validation/test split** with a **guard band** to reduce temporal leakage.  
-- Used **robust scaling** fitted on train only (median + MAD) to handle heavy tails and outliers.  
-- Compared practical classical baselines used in operations: **Robust Z-score**, **PCA reconstruction error**, **K-means distance to centroid**.  
-- Implemented **Projected Quantum Features (PQF)** as a hybrid model: **fidelity quantum kernel + One-Class SVM**, computed via **Qiskit statevector simulation** under a fixed qubit (feature) budget.    
-- Calibrated thresholds on validation normals to target a strict **α = 1% false-positive rate**, then reported **PR-AUC** plus **precision/recall at the calibrated operating point**.    
+- Built a reproducible anomaly detection pipeline aligned with real deployment constraints: _chronological train/validation/test split_ with a _guard band_ to reduce temporal leakage.  
+- Used _robust scaling_ fitted on train only (median + MAD) to handle heavy tails and outliers.  
+- Compared practical classical baselines used in operations: _Robust Z-score, PCA reconstruction error, K-means distance to centroid_.  
+- Implemented _Projected Quantum Features (PQF)_ as a hybrid model: _fidelity quantum kernel + One-Class SVM_, computed via _Qiskit statevector simulation_ under a fixed qubit (feature) budget.    
+- Calibrated thresholds on validation normals to target a strict α = 1% false-positive rate, then reported _PR-AUC_ plus _precision/recall at the calibrated operating point_.    
 - Result: PQF improved detection quality in the operating region that matters for monitoring (low-FPR), with a clear quality–cost tradeoff under simulation. 
 
-**Keywords:** Quantum Kernel Methods, PQF, One-Class SVM, Anomaly Detection, Supply Chain, Qiskit  
+Keywords: Quantum Kernel Methods, PQF, One-Class SVM, Anomaly Detection, Supply Chain, Qiskit  
 
 ### Fraudolent Links Detection 🥷🏻 
 [Project Folder](https://github.com/claraferrax/fraudulentLinks-detection/blob/main/README.pdf)
